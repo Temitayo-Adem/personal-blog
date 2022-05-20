@@ -1,0 +1,38 @@
+.social {
+    float: left;
+    padding: 10px;
+    height: 5%;
+    width: 5%;
+}
+
+.sport {
+    color: #FF00aa
+}
+
+.code {
+    color: rgb(28, 128, 0);
+}
+
+.music {
+    color: #00AAFF
+}
+
+button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    color: teal;
+}
+
+button em {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.uptop {
+    float: right;
+}

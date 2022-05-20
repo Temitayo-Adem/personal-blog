@@ -1,0 +1,154 @@
+@import "/styles/styles.css";
+@import "/styles/common.css";
+
+html {
+    background-color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr) ;
+    grid-template-rows: minmax(200px, auto);
+    width: 100%;
+    grid-template-areas: 
+    "head head head head head head"
+    "art art art art art art"
+    "art art art art art art"
+    "art art art art art art"
+    "art art art art art art"; 
+}
+
+.headFlex1 {
+    border: 2px solid gold;
+    display: flex;
+    flex-direction: row;
+    background-color:#008cff;
+    width: 100%;
+    text-align: center;
+    grid-area: head;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.flexA {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    flex-direction: column;
+    border: 2px dotted black;
+    justify-content: center;
+    align-items: center;
+    grid-area: art;
+    padding: 6px;
+}
+
+.opt3 {
+    flex: 1;
+    border: 2px solid black;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.opt5 {
+    width: 23%;
+    border: 2px solid black;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.opt5 button {
+    font-weight: bolder;
+    font-size: 1.17em;
+}
+
+.opt4 {
+    width: 50%;
+    border: 2px solid black;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5px;
+}
+
+.info {
+    color: gray;
+    padding: 4px;
+}
+
+.close {
+    margin: 0px
+}
+
+.dot {
+    width:100%
+}
+
+#uptop {
+    float: right;
+}
+
+@media(max-width: 900px) {
+    .headFlex1 {
+        border: 2px solid gold;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: #008cff;
+        text-align: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .opt4 {
+        width: 100%;
+        border: 2px solid black;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 40%;
+        order: 1;
+    }
+
+    .opt3 {
+        width: 100%;
+        border: 2px solid black;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 25%;
+        order: 2;
+    }
+
+    .opt5 {
+        width: 100%;
+        border: 2px solid black;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 25%;
+        order: 3;
+    }
+}

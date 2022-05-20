@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@200&family=Rock+3D&display=swap');
+@import "/styles/common.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html {
+    font-family: 'Open Sans',
+    sans-serif;
+    background-color: #008cff;
+}
+
+.container {
+    display: grid;
+    height: auto;
+    width: 100%;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 20% 5% 70% 5%;
+    grid-template-areas:
+        "hd hd hd hd hd hd"
+        "int int int int int int"
+        "main main main main main main"
+        "ft ft ft ft ft ft";
+}
+
+.headFlex {
+    display: flex;
+    text-align: center;
+    grid-area: hd;
+    flex-wrap: wrap;
+    border: 2px solid black;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    grid-area: main;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.int {
+    grid-area: int;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.opt1 {
+    width: 23%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.opt2 {
+    border: 2px solid black;
+    color: green;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.opt3 {
+    flex: 1;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.options {
+    float: right;
+    height: 100%;
+    width: 100%;
+    margin: 2px;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+    margin: 2%;
+    text-align: center;
+}
+
+li p{
+    font-weight: bolder;
+    font-size: 1.17em;
+}
+
+.post {
+    
+    width: 30%;
+    height: 40%;
+    margin: 5px;
+    position: relative;
+
+}
+
+.blogP {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+    height: 0%;
+    transition: .5s ease;
+}
+
+.post:hover .overlay {
+    height: 100%;
+}
+
+.text {
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.foot {
+    display: flex;
+    float: left;
+    flex-direction: column;
+    grid-area: foot;
+}
+
+h1 {
+    text-shadow: 3px 3px 3px black;
+    color: teal;
+    text-align: center;
+}
+
+button:hover {
+    color: red;
+}
+
+a {
+    text-decoration: none;
+    color: teal;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+
+a:hover {
+    color: red;
+}
+
+h4 {
+    text-decoration: underline;
+    color: black
+}
+
+.card {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    transition: .4s;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+#card-info {
+    padding: 1px 10px;
+}
+
+#avi {
+    height: 50%;
+    width: 50%;
+}
+
+@media(max-width: 900px) {
+    html {
+        font-family: "Robato", sans-serif;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: minmax(200px,auto);
+        width: 100%;
+        margin: auto;
+    }
+    
+    .headFlex {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: #008cff;
+        text-align: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .opt2 {
+        color: green;
+        width: 100%;
+        order: 1;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .opt1 {
+        order: 3;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .opt3 {
+        width: 100%;
+        order: 2;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    .int {
+        justify-content: center;
+        align-items: center;
+        background-color: #008cff;
+        text-align: center;
+    }
+
+    .main {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        background-color: #008cff;
+    }
+    
+    .post {
+        width: 90%;
+        margin: 2px;
+        padding: 2rem;
+        height: auto;
+        position: static;
+    }
+
+    .post:hover .overlay {
+        height: auto;
+    }
+
+    .blogP {
+        width: 90%;
+        height: 320px;
+        display: inline-block;
+    }
+    
+    .overlay {
+        position: static;
+        background-color: white;
+        overflow: visible;
+        height: auto;
+        transition: none;
+        width: 90%;
+        left: auto;
+        right: auto;
+        bottom: auto;
+    }
+    
+    .text {
+        color: black;
+        border: 2px solid green;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+        text-align: center;
+        top: auto;
+        left: auto;
+        position: relative;
+    }
+    
+    .foot {
+        display: flex;
+        flex-direction: column;
+        grid-area: foot;
+        float: left;
+    }
+    
+    a {
+        text-decoration: none;
+        color: teal;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px black;
+    }
+    
+    h4 {
+        text-decoration: underline;
+        color: black
+    }
+    
+    .card { 
+        width: 50%;
+    }
+}
