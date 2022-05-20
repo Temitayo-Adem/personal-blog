@@ -1,5 +1,5 @@
-@import "styles.css";
-@import "common.css";
+@import "styles/styles.css";
+@import "styles/common.css";
 
 html {
     background-color: white;
