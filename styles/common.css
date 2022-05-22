@@ -5,6 +5,12 @@
     width: 5%;
 }
 
+h1 {
+    text-shadow: 3px 3px 3px black;
+    color: teal;
+    text-align: center;
+}
+
 .sport {
     color: #FF00aa
 }
