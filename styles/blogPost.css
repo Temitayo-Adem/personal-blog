@@ -93,11 +93,11 @@ button:hover {
 }
 
 .close {
-    margin: 0px
+    margin: 0;
 }
 
 .dot {
-    width:100%
+    width:100%;
 }
 
 #uptop {
