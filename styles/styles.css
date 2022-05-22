@@ -143,12 +143,6 @@ li p{
     grid-area: foot;
 }
 
-h1 {
-    text-shadow: 3px 3px 3px black;
-    color: teal;
-    text-align: center;
-}
-
 button:hover {
     color: red;
 }
