@@ -1,7 +1,7 @@
 # personal-blog
 In this project I have created a simple Blog Page. The application consists of a Home Page and a Blog Post page. I have used some simple HTML and CSS to give the application style and responsiveness. 
 
-**Note:** I attempted to import the common.css into both styles.css and blogPost.css, but it did not work on htmlpreview.github.io (it works in my browser). As a result, I decided to link the common.css stylesheet to the head of both index.html and blogPost.html. (I also linked styles.css to the head of blogPost.html)
+**Note:** I attempted to import the common.css into both styles.css and blogPost.css, but it did not work on htmlpreview.github.io (it works in my browser). As a result, I decided to link the common.css stylesheet to the head of both index.html and blogPost.html. I'm not sure why a few of the properties are not showing.
 
 For the home page(index.html) I tried to give it a very simple early 2000s design. I used a container grid and grid-template-areas to structure the page. For the Navbar I wanted to section off three areas that would show the title of the page, a button to subscribe, and a link to the blogPost page. My idea for the main content was to nest a flexbox div that would contain 5 or 6 blog post previews that the user could click on to see the full article. I was able to utilize cards with overlay to make a preview of the blog post slide up when a mouse hovers over it. The first few "Read More" buttons link to the Blog Post page and the last few are just buttons. I also used different colors to represent different genres/types of posts (sports, programming, music). The footer contains a card that represents me and links to social media sites. I also put a link to return to the top of the page.
 
