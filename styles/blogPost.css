@@ -75,6 +75,10 @@ html {
     height: 100%;
 }
 
+button:hover {
+    color: red;
+}
+
 .article {
     display: flex;
     flex-direction: column;
